@@ -1,18 +1,54 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Kinther's Blog
-site_description: kinther's blog
 site_url: https://kinthero.github.io/blog
-copyright: Copyright &copy; 2025 kinther
+site_author: kinther
+site_description: >-
+  kinther's blog
 
 # Repository
 repo_name: kinthero/blog
 repo_url: https://github.com/kinthero/blog
 
+# Copyright
+copyright: Copyright &copy; 2025 kinther
+
+
 theme:
   name: material
   custom_dir: overrides
+  language: zh
   icon:
     logo: simple/known
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # 页脚显示上下一页
+    - navigation.footer
+    # 节下面的 index 文件可以作为该节概述
+    - navigation.indexes
+    # 最顶层目录作为顶部的 tab
+    - navigation.tabs
+    # 固定 tab
+    # - navigation.tabs.sticky
+    # 性能优化
+    - navigation.prune
+    # 回到顶部功能
+    - navigation.top
+    # 浏览的时候，地址 URL 会更新锚点
+    - navigation.tracking
+    # 阅读的时候右侧锚点会跟随
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
   palette: 
     - scheme: slate
       toggle:
@@ -32,27 +68,56 @@ theme:
   
 markdown_extensions:
   - abbr
+  - admonition
   - attr_list
-  # emoji
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  # code highlight
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  # admonition
-  - admonition
-  - pymdownx.details
-  # diagrams
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: kinther
+      repo: site
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      # slugify: !!python/object/apply:pymdownx.slugs.slugify
+      # kwds:
+      # case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
 
 extra:
   social:
@@ -62,7 +127,6 @@ extra:
       link: https://kinthero.github.io/blog/feed_rss_created.xml
 
 plugins:
-  - meta
   - search
   - blog:
       blog_dir: .
@@ -76,6 +140,8 @@ plugins:
         - math
         - misc
         - how-to
+        - idea
+  - meta
   - tags
   - rss:
       match_path: "posts/.*"
