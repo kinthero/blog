@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Kinther&#39;s Blog</title>
+    <description>kinther&#39;s blog</description>
+    <link>https://kinthero.github.io/blog/</link>
+    <atom:link href="https://kinthero.github.io/blog/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
+
+    
+    <managingEditor>kinther</managingEditor>
+    <docs>https://github.com/kinthero/blog</docs>
+    <language>zh</language>
+
+    
+    <pubDate>Fri, 06 Jun 2025 17:29:24 -0000</pubDate>
+    <lastBuildDate>Fri, 06 Jun 2025 17:29:24 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.17.3</generator>
+
+    
+    
+    <image>
+      <url>None</url>
+      <title>Kinther's Blog</title>
+      <link>https://kinthero.github.io/blog/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>个人学习风格指南</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;个人学习风格指南&lt;/h1&gt;
+&lt;h2&gt;主旨&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;学习要有目标&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;学习要有目标，不能是看一个视频，或者一个教程就开始学习。
+因为我跟着看完或者做完之后，我后面一定是记不住的。
+看视频和跟着做，都是为了让我对学习的东西有一个更加清楚的概念。
+之后一些具体的命令操作过程，其实应该自己整理出来，给自己后面可以参考使用。
+因为东...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/</guid>
+      
+    </item>
+    
+    <item>
+      <title>学习资料</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;学习资料&lt;/h1&gt;
+&lt;h2&gt;AI&lt;/h2&gt;
+&lt;h3&gt;教程&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&#34;https://github.com/naklecha/llama3-from-scratch&#34;&gt;llama3-from-scratch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&#34;https://transformers.run/&#34;&gt;Transformers 快速入门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ...&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <link>https://kinthero.github.io/blog/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
+      
+    </item>
+    
+    <item>
+      <title>alacritty 设置</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;alacritty 设置&lt;/h1&gt;
+&lt;p&gt;配置文件&lt;/p&gt;
+&lt;p&gt;```toml
+live_config_reload = true&lt;/p&gt;
+&lt;p&gt;[shell]
+program = &#34;ubuntu&#34;&lt;/p&gt;
+&lt;p&gt;[window]&lt;/p&gt;
+&lt;h1&gt;dimensions = {columns = 100, lines = 40}&lt;/h1&gt;
+&lt;p&gt;position = { x = 400...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/alacritty-%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/alacritty-%E8%AE%BE%E7%BD%AE/</guid>
+      
+    </item>
+    
+    <item>
+      <title>docker 基础</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;docker 基础&lt;/h1&gt;
+&lt;h2&gt;基本概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;镜像是将一些工具环境的打包&lt;/li&gt;
+&lt;li&gt;容器是镜像的实例化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker 仓库&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hub.docker.com&#34;&gt;Docker hub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dockerfile&lt;/h2&gt;
+&lt;p&gt;Dockerfile 可以用来创建镜像，文件名叫做 Dockerf...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/docker-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/docker-%E5%9F%BA%E7%A1%80/</guid>
+      
+    </item>
+    
+    <item>
+      <title>docker 安装 hadoop 集群</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;docker 安装 hadoop 集群&lt;/h1&gt;
+&lt;p&gt;创建&lt;code&gt;docker-compose.yaml&lt;/code&gt;文件，写入&lt;/p&gt;
+&lt;p&gt;```yaml
+version: &#34;2&#34;
+services:
+  namenode:
+    image: apache/hadoop:3
+    hostname: namenode
+    command...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/docker-%E5%AE%89%E8%A3%85-hadoop-%E9%9B%86%E7%BE%A4/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/docker-%E5%AE%89%E8%A3%85-hadoop-%E9%9B%86%E7%BE%A4/</guid>
+      
+    </item>
+    
+    <item>
+      <title>docker 安装 sqlserver 简易版</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;docker 安装 sqlserver 简易版&lt;/h1&gt;
+&lt;h2&gt;TLDR&lt;/h2&gt;
+&lt;p&gt;使用下面的命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;shell
+sqlcmd create mssql --accept-eula --name mssql&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;p&gt;首先需要 docker 已经安装，现在先安装 sqlcmd&lt;/p&gt;
+&lt;p&gt;```shell
+wing...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/docker-%E5%AE%89%E8%A3%85-sqlserver-%E7%AE%80%E6%98%93%E7%89%88/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/docker-%E5%AE%89%E8%A3%85-sqlserver-%E7%AE%80%E6%98%93%E7%89%88/</guid>
+      
+    </item>
+    
+    <item>
+      <title>docker 安装 sqlserver</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;docker 安装 sqlserver&lt;/h1&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;p&gt;拉取 sqlserver 镜像&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;shell
+docker pull mcr.microsoft.com/mssql/server:2022-latest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;运行容器，将&lt;code&gt;MSSQL_SA_PASSWORDS&lt;/code&gt;设置自己的密码&lt;/p&gt;
+&lt;p&gt;```she...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/docker-%E5%AE%89%E8%A3%85-sqlserver/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/docker-%E5%AE%89%E8%A3%85-sqlserver/</guid>
+      
+    </item>
+    
+    <item>
+      <title>docker 网络代理</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;docker 网络代理&lt;/h1&gt;
+&lt;h2&gt;设置代理来拉取镜像&lt;/h2&gt;
+&lt;p&gt;配置 &lt;code&gt;/etc/docker/daemon.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;```json
+{
+  &#34;proxies&#34;: {
+    &#34;http-proxy&#34;: &#34;http://127.0.0.1:7890&#34;,
+    &#34;https-proxy&#34;: &#34;http://127...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/docker-%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/docker-%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/</guid>
+      
+    </item>
+    
+    <item>
+      <title>doom-emacs</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;doom-emacs&lt;/h1&gt;
+&lt;h2&gt;doom emacs 安装&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;shell
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;同步一...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/doom-emacs/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/doom-emacs/</guid>
+      
+    </item>
+    
+    <item>
+      <title>emacs 基础</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;emacs 基础&lt;/h1&gt;
+&lt;h2&gt;按键&lt;/h2&gt;
+&lt;h3&gt;等效按键&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Meta 键等效于&lt;kbd&gt;Alt&lt;/kbd&gt;，如果是按住&lt;kbd&gt;Alt&lt;/kbd&gt;按键，也等效于&lt;kbd&gt;Esc&lt;/kbd&gt;，但是&lt;kbd&gt;Esc&lt;/kbd&gt; 等效于 &lt;kbd&gt;C-[&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;RET&lt;/kbd&gt; 等效于 &amp;lt;kbd...&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <link>https://kinthero.github.io/blog/emacs-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/emacs-%E5%9F%BA%E7%A1%80/</guid>
+      
+    </item>
+    
+    <item>
+      <title>git 配置</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;git 配置&lt;/h1&gt;
+&lt;h2&gt;连接 github&lt;/h2&gt;
+&lt;p&gt;设置用户信息&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;shell
+git config --global user.name &#34;name&#34;
+git config --global user.email &#34;email&#34;
+git config --global --list&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;生成密钥&lt;/p&gt;
+&lt;p&gt;``...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/git-%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/git-%E9%85%8D%E7%BD%AE/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Markdown 写作语法指南</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;Markdown 写作语法指南&lt;/h1&gt;
+&lt;p&gt;markdown 有很多的方言，mkdocs 支持了基本的 markdown 语法，而&lt;code&gt;material for mkdocs&lt;/code&gt; 支持更多的语法。基于语法参考&lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;这里&lt;/a&gt;,本...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/markdown-%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/markdown-%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</guid>
+      
+    </item>
+    
+    <item>
+      <title>neovim 配置</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;neovim 配置&lt;/h1&gt;
+&lt;p&gt;直接安装 &lt;a href=&#34;https://www.lazyvim.org&#34;&gt;lazyvim&lt;/a&gt;，使用 &lt;kbd&gt;Leader f c&lt;/kbd&gt; 可以打开配置文件。&lt;/p&gt;
+&lt;h2&gt;Config&lt;/h2&gt;
+&lt;p&gt;在 Config 目录下，编辑下面的文件&lt;/p&gt;
+&lt;p&gt;keymaps.lua&lt;/p&gt;
+&lt;p&gt;```lua
+vim.keymap.set(...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/neovim-%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/neovim-%E9%85%8D%E7%BD%AE/</guid>
+      
+    </item>
+    
+    <item>
+      <title>org-mode 基础</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;org-mode 基础&lt;/h1&gt;
+&lt;p&gt;org 是一个大纲视图，大纲允许以分层结构组织文档。可以通过折叠只显示一般文档结构和当前正在处理的部分。
+使用 &lt;kbd&gt;Tab&lt;/kbd&gt; 可以切换折叠和展开，使用 &lt;kbd&gt;Shift-Tab&lt;/kbd&gt;可以全局展开和折叠。&lt;/p&gt;
+&lt;h2&gt;文档结构&lt;/h2&gt;
+&lt;h3&gt;标题&lt;/h3&gt;
+&lt;p&gt;```org
+* ...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/org-mode-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/org-mode-%E5%9F%BA%E7%A1%80/</guid>
+      
+    </item>
+    
+    <item>
+      <title>python 环境配置</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;python 环境配置&lt;/h1&gt;
+&lt;p&gt;本文只讲 windows 的 python 环境配置&lt;/p&gt;
+&lt;h2&gt;安装 python(旧的方法)&lt;/h2&gt;
+&lt;p&gt;安装 python 的方法有很多，目前个人比较喜欢用 scoop 安装 python，主要原因有以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;方便的切换不同版本的 python&lt;/li&gt;
+&lt;li&gt;占用空间小，相比较于 conda
+...&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <link>https://kinthero.github.io/blog/python-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/python-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      
+    </item>
+    
+    <item>
+      <title>树莓派设置</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;树莓派设置&lt;/h1&gt;
+&lt;h2&gt;网络问题&lt;/h2&gt;
+&lt;h3&gt;下载 mihomo&lt;/h3&gt;
+&lt;p&gt;mihomo 这里就直接使用命令行版本，可以从 &lt;a href=&#34;https://github.com/MetaCubeX/mihomo/releases&#34;&gt;github&lt;/a&gt; 下载，下载的版本是 xxx-linux-arm64-xxx.deb
+将文件通过 scp 复...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%AE%BE%E7%BD%AE/</guid>
+      
+    </item>
+    
+    <item>
+      <title>rime 输入法配置</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;rime 输入法配置&lt;/h1&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;p&gt;在官网可以下载安装 &lt;a href=&#34;https://rime.im/download/&#34;&gt;rime&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;ubuntu 安装 rime&lt;/p&gt;
+&lt;p&gt;```bash
+sudo apt-get install ibus-rime&lt;/p&gt;
+&lt;h1&gt;安装双拼&lt;/h1&gt;
+&lt;p&gt;sudo apt-get install librime...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/rime-%E8%BE%93%E5%85%A5%E6%B3%95%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/rime-%E8%BE%93%E5%85%A5%E6%B3%95%E9%85%8D%E7%BD%AE/</guid>
+      
+    </item>
+    
+    <item>
+      <title>scoop 安装配置和常用软件安装</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;scoop 安装配置和常用软件安装&lt;/h1&gt;
+&lt;h2&gt;安装 &lt;a href=&#34;https://scoop.sh/&#34;&gt;scoop&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;```shell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri h...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/scoop-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/scoop-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</guid>
+      
+    </item>
+    
+    <item>
+      <title>深蓝词库使用</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;深蓝词库使用&lt;/h1&gt;
+&lt;p&gt;这里在 ubuntu 下为自带的输入法添加词库。&lt;/p&gt;
+&lt;p&gt;首先，下载深蓝转换器，&lt;a href=&#34;https://github.com/studyzy/imewlconverter/releases&#34;&gt;地址&lt;/a&gt;，然后进入目录。&lt;/p&gt;
+&lt;p&gt;```bash&lt;/p&gt;
+&lt;h1&gt;下载词库&lt;/h1&gt;
+&lt;p&gt;git clone https://github.com/...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/%E6%B7%B1%E8%93%9D%E8%AF%8D%E5%BA%93%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/%E6%B7%B1%E8%93%9D%E8%AF%8D%E5%BA%93%E4%BD%BF%E7%94%A8/</guid>
+      
+    </item>
+    
+    <item>
+      <title>tmux 基础使用</title>
+      
+      
+        
+      <author>kinther</author>
+        
+      <author>kinther</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;tmux 基础使用&lt;/h1&gt;
+&lt;h2&gt;安装 tmux&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;bash
+sudo apt-get install tmux&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;启动和退出&lt;/h2&gt;
+&lt;p&gt;```bash&lt;/p&gt;
+&lt;h1&gt;进入 tmux&lt;/h1&gt;
+&lt;p&gt;tmux&lt;/p&gt;
+&lt;h1&gt;退出 tmux&lt;/h1&gt;
+&lt;p&gt;exit
+```&lt;/p&gt;
+&lt;h2&gt;prefix 键与帮助&lt;/h2&gt;
+&lt;p&gt;tmux 使用大量快捷键操作窗口和 pane，p...&lt;/p&gt;</description>
+      <link>https://kinthero.github.io/blog/tmux-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 06 Jun 2025 17:28:33 +0000</pubDate>
+      <source url="https://kinthero.github.io/blog/feed_rss_updated.xml">Kinther's Blog</source>
+      
+      <guid isPermaLink="true">https://kinthero.github.io/blog/tmux-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</guid>
+      
+    </item>
+    
+  </channel>
+</rss>
