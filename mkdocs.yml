@@ -6,20 +6,21 @@ copyright: Copyright &copy; 2025 kinther
 
 theme:
   name: material
+  custom_dir: overrides
   icon:
     logo: simple/known
   palette: 
-    - scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-      primary: white
-      accent: red
     - scheme: slate
       toggle:
         icon: material/weather-night
         name: Switch to light mode
       primary: teal
+      accent: red
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: white
       accent: red
   font:
     text: LXGW WenKai TC
@@ -75,4 +76,3 @@ plugins:
       date_from_meta:
         as_creation: date.created
         as_update: date.updated
-
