@@ -4,6 +4,10 @@ site_description: kinther's blog
 site_url: https://kinthero.github.io/blog
 copyright: Copyright &copy; 2025 kinther
 
+# Repository
+repo_name: kinthero/blog
+repo_url: https://github.com/kinthero/blog
+
 theme:
   name: material
   custom_dir: overrides
@@ -27,6 +31,7 @@ theme:
     code: Fira Code
   
 markdown_extensions:
+  - abbr
   - attr_list
   # emoji
   - pymdownx.emoji:
@@ -53,6 +58,8 @@ extra:
   social:
     - icon: simple/github
       link: https://kinthero.github.com
+    - icon: simple/rss
+      link: https://kinthero.github.io/blog/feed_rss_created.xml
 
 plugins:
   - meta
