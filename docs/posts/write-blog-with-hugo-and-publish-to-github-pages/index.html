@@ -82,7 +82,7 @@ hugo server -D
 创建github项目 打开 github，进入个人页面，创建 new repository。输入 仓库名称 repository name，然后创建库 create repository。">
   <meta itemprop="datePublished" content="2025-08-07T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-07T00:00:00+00:00">
-  <meta itemprop="wordCount" content="155">
+  <meta itemprop="wordCount" content="493">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="使用 Hugo 写博客发布到 GitHub Pages">
   <meta name="twitter:description" content="安装 hugo sudo snap install hugo 创建本地项目 hugo new site blog cd blog git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke echo &#34;theme = &#39;ananke&#39;&#34; &gt;&gt; hugo.toml 写第一篇博客 hugo new posts/my-first-post.md 输入内容
@@ -182,15 +182,118 @@ hugo server -D
 <ol>
 <li>打开仓库 <code>blog</code></li>
 <li>点击右上角的 Settings -&gt; 左侧点击 Pages</li>
-<li>找到 <strong>Build and deployment</strong> 区域，设置：
-<ul>
-<li>Source: Deploy from a branch</li>
-<li>Branch: main</li>
-<li>Folder: docs</li>
-</ul>
-</li>
+<li>找到 <strong>Build and deployment</strong> 区域，选择 <code>GitHub Actions</code></li>
 </ol>
-<p>保存之后，就可以访问，<code>https://youname.github.io/blog/</code> 。</p>
+<p>编辑 hugo.toml，添加</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">caches</span>]
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">caches</span>.<span style="color:#a6e22e">images</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dir</span> = <span style="color:#e6db74">&#39;:cacheDir/images&#39;</span>
+</span></span></code></pre></div><p>添加github workflow文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p .github/workflows
+</span></span><span style="display:flex;"><span>touch .github/workflows/hugo.yaml
+</span></span></code></pre></div><p>在 <code>.github/workflows/hugo.yaml</code> 中写入</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo site to Pages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Runs on pushes targeting the default branch</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Allows you to run this workflow manually from the Actions tab</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">workflow_dispatch</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">permissions</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">contents</span>: <span style="color:#ae81ff">read</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pages</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id-token</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">concurrency</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">group</span>: <span style="color:#e6db74">&#34;pages&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cancel-in-progress</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default to bash</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">defaults</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># GitHub-hosted runners automatically enable `set -eo pipefail` for Bash shells.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">shell</span>: <span style="color:#ae81ff">bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Build job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">DART_SASS_VERSION</span>: <span style="color:#ae81ff">1.89.2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">HUGO_VERSION</span>: <span style="color:#ae81ff">0.148.0</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">HUGO_ENVIRONMENT</span>: <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">America/Los_Angeles</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Hugo CLI</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          sudo dpkg -i ${{ runner.temp }}/hugo.deb</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Dart Sass</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          wget -O ${{ runner.temp }}/dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          tar -xf ${{ runner.temp }}/dart-sass.tar.gz --directory ${{ runner.temp }}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          mv ${{ runner.temp }}/dart-sass/ /usr/local/bin
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          echo &#34;/usr/local/bin/dart-sass&#34; &gt;&gt; $GITHUB_PATH</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">submodules</span>: <span style="color:#ae81ff">recursive</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Pages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">pages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/configure-pages@v5</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Node.js dependencies</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#e6db74">&#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Restore</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache-restore</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache/restore@v4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            ${{ runner.temp }}/hugo_cache</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">hugo-${{ github.run_id }}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">restore-keys</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">hugo-</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Configure Git</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">git config core.quotepath false</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build with Hugo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          hugo \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --gc \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --minify \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --baseURL &#34;${{ steps.pages.outputs.base_url }}/&#34; \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --cacheDir &#34;${{ runner.temp }}/hugo_cache&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Save</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache-save</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache/save@v4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            ${{ runner.temp }}/hugo_cache</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{ steps.cache-restore.outputs.cache-primary-key }}</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Upload artifact</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/upload-pages-artifact@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: <span style="color:#ae81ff">./public</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Deployment job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">github-pages</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">${{ steps.deployment.outputs.page_url }}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">needs</span>: <span style="color:#ae81ff">build</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to GitHub Pages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">deployment</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/deploy-pages@v4</span>
+</span></span></code></pre></div><p>保存之后，就可以访问，<code>https://youname.github.io/blog/</code> 。</p>
 <h2 id="后续发布">后续发布</h2>
 <p>创建 Makefile，后面写完了只需要运行 make 就可以了</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.PHONY: build deploy clean
