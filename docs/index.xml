@@ -6,8 +6,15 @@
     <description>Recent content on kinther の blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Aug 2025 22:21:03 +0800</lastBuildDate>
     <atom:link href="https://kinthero.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://kinthero.github.io/blog/posts/my-first-post/</link>
+      <pubDate>Thu, 07 Aug 2025 22:21:03 +0800</pubDate>
+      <guid>https://kinthero.github.io/blog/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;first-post&#34;&gt;First Post&lt;/h1&gt;&#xA;&lt;p&gt;$$&#xA;E = m c^2&#xA;$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>使用 Hugo 写博客发布到 GitHub Pages</title>
       <link>https://kinthero.github.io/blog/posts/write-blog-with-hugo-and-publish-to-github-pages/</link>

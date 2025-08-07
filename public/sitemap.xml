@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <loc>https://kinthero.github.io/blog/</loc>
     <lastmod>2025-08-07T22:21:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://kinthero.github.io/blog/posts/my-first-post/</loc>
     <lastmod>2025-08-07T22:21:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://kinthero.github.io/blog/posts/</loc>
     <lastmod>2025-08-07T22:21:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://kinthero.github.io/blog/posts/write-blog-with-hugo-and-publish-to-github-pages/</loc>
+    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://kinthero.github.io/blog/categories/</loc>
+  </url><url>
+    <loc>https://kinthero.github.io/blog/tags/</loc>
   </url>
 </urlset>
