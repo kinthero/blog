@@ -1,6 +1,6 @@
 .PHONY: build deploy clean
 
-default: build
+default: deploy
 
 build:
 	hugo -d docs
