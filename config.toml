@@ -1,7 +1,17 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://kinthero.github.io/blog"
 
 theme = "kita"
+
+title = "kinther"
+description = "kinther's site"
+
+default_language = "zh"
+
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -12,7 +22,43 @@ build_search_index = false
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
 
 [extra]
 # Put all your custom variables here
+math = true
+mermaid = true
+comment = true
+social_image = "icons/github.svg"
+
+[extra.profile]
+name = "kinther"
+bio = "kinther's site"
+# The URL of avatar.
+avatar_url = "icons/github.svg"
+# Invert color in dark mode.
+avatar_invert = true
+
+
+[[extra.profile.social]]
+name = "github"
+url = "https://github.com/kinthero/blog"
+
+[[extra.profile.social]]
+name = "rss"
+url = "$BASE_URL/atom.xml"
+
+[[extra.menu]]
+name = "Archive"
+url = "$BASE_URL/archive"
+
+[[extra.menu]]
+name = "Tags"
+url = "$BASE_URL/tags"
+
+[[extra.menu]]
+name = "About"
+url = "$BASE_URL/about"
+
+[extra.footer]
+since = 2025
