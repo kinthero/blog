@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>kinther</title>
+    <subtitle>kinther&#x27;s site</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://kinthero.github.io/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-01T00:00:00+00:00</updated>
+    <id>https://kinthero.github.io/blog/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>first blog</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog/first/"/>
+        <id>https://kinthero.github.io/blog/first/</id>
+        
+        <content type="html" xml:base="https://kinthero.github.io/blog/first/">&lt;h1 id=&quot;ce-shi-bo-ke-gong-neng&quot;&gt;测试博客功能&lt;&#x2F;h1&gt;
+&lt;p&gt;这是第一个博客，用来测试各个功能是否正常&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ji-chu&quot;&gt;基础&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;斜体&lt;&#x2F;em&gt; &lt;strong&gt;粗体&lt;&#x2F;strong&gt; &lt;code&gt;行内引用&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这是&lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;github&lt;&#x2F;a&gt;的链接，这是另一个链接&lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;github&lt;&#x2F;a&gt;，还是一个链接&lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;github&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这是一个脚注&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;下面是一个随机的图片&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;picsum.photos&#x2F;300&#x2F;200&quot; alt=&quot;图片&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是一段引用&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;lie-biao&quot;&gt;列表&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple
+&lt;ol&gt;
+&lt;li&gt;aaa&lt;&#x2F;li&gt;
+&lt;li&gt;bbb&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Orange&lt;&#x2F;li&gt;
+&lt;li&gt;Banana
+&lt;ul&gt;
+&lt;li&gt;bbb&lt;&#x2F;li&gt;
+&lt;li&gt;nana&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;biao-ge&quot;&gt;表格&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;name&lt;&#x2F;th&gt;&lt;th&gt;age&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Bob&lt;&#x2F;td&gt;&lt;td&gt;27&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Alice&lt;&#x2F;td&gt;&lt;td&gt;23&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;dai-ma&quot;&gt;代码&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hello&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;gong-shi&quot;&gt;公式&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+E = m c^2
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mermaid&quot;&gt;mermaid&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;mermaid&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-mermaid &quot;&gt;&lt;code class=&quot;language-mermaid&quot; data-lang=&quot;mermaid&quot;&gt;&lt;span&gt;graph TD;
+&lt;&#x2F;span&gt;&lt;span&gt;A--&amp;gt;B;
+&lt;&#x2F;span&gt;&lt;span&gt;A--&amp;gt;C;
+&lt;&#x2F;span&gt;&lt;span&gt;B--&amp;gt;D;
+&lt;&#x2F;span&gt;&lt;span&gt;C--&amp;gt;D;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;这是脚注内容&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh">
+        <title>zola 基础</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog/zola/"/>
+        <id>https://kinthero.github.io/blog/zola/</id>
+        
+        <content type="html" xml:base="https://kinthero.github.io/blog/zola/">&lt;p&gt;改用zola来做博客了，因为感觉自定义的程度比较高，刚好可以练习前端方面的技能。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
