@@ -1,4 +1,3 @@
-# The URL the site will be built for
 base_url = "https://kinthero.github.io/blog"
 
 theme = "kita"
