@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>kinther</title>
+    <subtitle>kinther&#x27;s site</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://kinthero.github.io/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-07T00:00:00+00:00</updated>
+    <id>https://kinthero.github.io/blog/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>AI 时代的个人知识库：从 Karpathy 的理念到我的 Obsidian 实践</title>
+        <published>2026-04-07T00:00:00+00:00</published>
+        <updated>2026-04-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog/karpathy-llm-wiki-obsidian/"/>
+        <id>https://kinthero.github.io/blog/karpathy-llm-wiki-obsidian/</id>
+        
+        <content type="html" xml:base="https://kinthero.github.io/blog/karpathy-llm-wiki-obsidian/">&lt;h2 id=&quot;yi-ge-tong-dian&quot;&gt;一个痛点&lt;&#x2F;h2&gt;
+&lt;p&gt;每个爱记笔记的人迟早都会遇到同一个问题：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;我记了太多，但从来不看。&quot;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;笔记越积越多，维护成本越来越高。你想加链接、建索引、分类标签，但每次整理都要花大量时间。到最后，知识管理系统变成了需要被管理的负担。&lt;&#x2F;p&gt;
+&lt;p&gt;Andrej Karpathy 在 2025 年分享了他的 LLM Wiki 工作流，核心观点就一句：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;不要花时间维护知识图谱，花时间产出内容。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;karpathy-de-li-nian&quot;&gt;Karpathy 的理念&lt;&#x2F;h2&gt;
+&lt;p&gt;他的方案很简单：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;只管写&lt;&#x2F;strong&gt; — 随手记录想法，不需要管结构&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;AI 整理&lt;&#x2F;strong&gt; — 让 LLM 自动分类、发现关联、建立链接&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;定期园艺&lt;&#x2F;strong&gt; — 每隔一段时间让 AI 扫描新笔记，合并重复，补全链接&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;传统 PKM（个人知识管理）工具要求你做 MOC、打标签、手动加 &lt;code&gt;[[wikilink]]&lt;&#x2F;code&gt;。Karpathy 说：这些不该你来做，AI 来做。&lt;&#x2F;p&gt;
+&lt;p&gt;HN 上的讨论很有意思：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;支持者&lt;&#x2F;strong&gt; 认为&quot;先写后整理&quot;比&quot;先整理再写&quot;更符合人类思维习惯&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;反对者&lt;&#x2F;strong&gt; 担心整理本身就是思考过程，不应该完全外包&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;我觉得两边都有道理。关键不是&lt;strong&gt;替代思考&lt;&#x2F;strong&gt;，而是&lt;strong&gt;把机械劳动交给 AI，把思考精力留给真正需要思考的事&lt;&#x2F;strong&gt;。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;wo-de-shi-jian&quot;&gt;我的实践&lt;&#x2F;h2&gt;
+&lt;p&gt;我最近正好在折腾 Obsidian 知识库，顺便实践了一下 Karpathy 的思路。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;di-yi-bu-zhi-guan-shou-ji&quot;&gt;第一步：只管收集&lt;&#x2F;h3&gt;
+&lt;p&gt;日常看到好文章 → Obsidian 笔记只管写，不需要想太多。论文总结、工具教程、生活笔记，全部丢进去。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;di-er-bu-rang-ai-zuo-yuan-yi&quot;&gt;第二步：让 AI 做园艺&lt;&#x2F;h3&gt;
+&lt;p&gt;我让 AI 扫描了整个 vault（14 篇笔记），做了这些事：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;合并重复内容&lt;&#x2F;strong&gt;：比如&quot;Emotion Concepts&quot;笔记有中英两个版本，合并为一篇&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;自动添加关联&lt;&#x2F;strong&gt;：每篇笔记末尾加上 &lt;code&gt;Related:&lt;&#x2F;code&gt; 链接，指向可能相关的其他笔记&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;建立 MOC 索引&lt;&#x2F;strong&gt;：自动生成 &lt;code&gt;MOC-ai-ml.md&lt;&#x2F;code&gt;（AI&#x2F;ML 方向）和 &lt;code&gt;MOC-devops.md&lt;&#x2F;code&gt;（开发运维方向）&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;更新总导航&lt;&#x2F;strong&gt;：&lt;code&gt;INDEX.md&lt;&#x2F;code&gt; 和 &lt;code&gt;龙虾的笔记.md&lt;&#x2F;code&gt; 自动更新&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;整个过程我没有手动翻任何一篇笔记，AI 完成了所有机械性的整理工作。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;di-san-bu-chan-chu-nei-rong&quot;&gt;第三步：产出内容&lt;&#x2F;h3&gt;
+&lt;p&gt;整理完的知识库，直接拿来写博客。比如现在这篇。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;dui-bi-chuan-tong-fang-shi-vs-ai-fu-zhu&quot;&gt;对比：传统方式 vs AI 辅助&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;传统方式&lt;&#x2F;th&gt;&lt;th&gt;AI 辅助&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;记录方式&lt;&#x2F;td&gt;&lt;td&gt;边写边想结构&lt;&#x2F;td&gt;&lt;td&gt;先写再说&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;链接&lt;&#x2F;td&gt;&lt;td&gt;手动建 &lt;code&gt;[[wikilink]]&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;AI 扫描内容自动建议&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;分类&lt;&#x2F;td&gt;&lt;td&gt;手动建文件夹&#x2F;标签&lt;&#x2F;td&gt;&lt;td&gt;AI 按主题自动归类&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;索引&lt;&#x2F;td&gt;&lt;td&gt;手写 MOC&#x2F;目录页&lt;&#x2F;td&gt;&lt;td&gt;AI 自动生成并更新&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;维护成本&lt;&#x2F;td&gt;&lt;td&gt;高&lt;&#x2F;td&gt;&lt;td&gt;低&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;思考质量&lt;&#x2F;td&gt;&lt;td&gt;可能更高（整理即思考）&lt;&#x2F;td&gt;&lt;td&gt;思考留给需要深度处理的环节&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;我的体会是：&lt;strong&gt;对于日常的知识库维护，AI 整理完全够用；但对于深度研究场景（比如论文精读），人的判断仍然不可替代。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;yi-xie-ju-ti-de-fa-xian&quot;&gt;一些具体的发现&lt;&#x2F;h2&gt;
+&lt;p&gt;Karpathy 方案有几个特别实用的点：&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;xian-xie-hou-zheng-li-cai-shi-zheng-chang-ren-lei-xing-wei&quot;&gt;&quot;先写后整理&quot;才是正常人类行为&lt;&#x2F;h3&gt;
+&lt;p&gt;大多数人记笔记的习惯是：看到东西 → 存下来 → 以后再看。但&quot;以后&quot;从来不发生。AI 整理让这个&quot;以后&quot;变成现实——你只需要记，整理工作会有后续保障。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ai-de-ju-xian&quot;&gt;AI 的局限&lt;&#x2F;h3&gt;
+&lt;p&gt;HN 上有个反对意见我觉得很有道理：AI 生成的链接可能不够精确。确实，我在实践中也发现 AI 有时会给出&quot;看起来相关但实际上不太对&quot;的链接建议。解决办法是：AI 做初筛，人做终审。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zhen-zheng-de-jia-zhi-bu-zai-zheng-li-zai-yu-chan-chu&quot;&gt;真正的价值不在整理，在于产出&lt;&#x2F;h3&gt;
+&lt;p&gt;这是 Karpathy 最核心的观点整理完的知识库如果没有被使用，那它只是一个更大的待读堆。我的 Obsidian vault 整理完后，最直接的产出就是这篇博客——&lt;strong&gt;从笔记到内容，路径变短了。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;gong-ju-lian&quot;&gt;工具链&lt;&#x2F;h2&gt;
+&lt;p&gt;我目前用的工具：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Obsidian&lt;&#x2F;strong&gt; — 核心笔记工具，本地 Markdown 文件&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Gitea&lt;&#x2F;strong&gt; — 自建 Git 服务，vault 同步到私有仓库&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;OpenClaw&lt;&#x2F;strong&gt; — AI 助手，负责自动化整理&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Zola + GitHub Pages&lt;&#x2F;strong&gt; — 博客部署&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;这套工具链让我可以：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;随时记录（Obsidian）&lt;&#x2F;li&gt;
+&lt;li&gt;安全备份（Gitea 同步）&lt;&#x2F;li&gt;
+&lt;li&gt;AI 定期整理（OpenClaw 自动化）&lt;&#x2F;li&gt;
+&lt;li&gt;快速发布（Zola 博客）&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;Karpathy 的 LLM Wiki 不是什么革命性发明，但它戳中了一个真实痛点：&lt;strong&gt;知识管理的维护成本太高，高到大部分人最终放弃。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;AI 不是要替代你思考，而是让你&lt;strong&gt;把思考精力用在产出上，而不是维护上。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;我的 Obsidian vault 经过 AI 整理后，确实变成了一个&quot;更好用的知识库&quot;——不是因为链接更多，而是因为我可以更快找到自己需要的东西，更轻松地写成文章。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;写于 2026-04-07 · 灵感来自 Karpathy 的 &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;karpathy&#x2F;442a6bf555914893e9891c11519de94f&quot;&gt;LLM Wiki Gist&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh">
+        <title>first blog</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog/first/"/>
+        <id>https://kinthero.github.io/blog/first/</id>
+        
+        <content type="html" xml:base="https://kinthero.github.io/blog/first/">&lt;h1 id=&quot;ce-shi-bo-ke-gong-neng&quot;&gt;测试博客功能&lt;&#x2F;h1&gt;
+&lt;p&gt;这是第一个博客，用来测试各个功能是否正常&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ji-chu&quot;&gt;基础&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;斜体&lt;&#x2F;em&gt; &lt;strong&gt;粗体&lt;&#x2F;strong&gt; &lt;code&gt;行内引用&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这是&lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;github&lt;&#x2F;a&gt;的链接，这是另一个链接&lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;github&lt;&#x2F;a&gt;，还是一个链接&lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;github&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这是一个脚注&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;下面是一个随机的图片&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;picsum.photos&#x2F;300&#x2F;200&quot; alt=&quot;图片&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是一段引用&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;lie-biao&quot;&gt;列表&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple
+&lt;ol&gt;
+&lt;li&gt;aaa&lt;&#x2F;li&gt;
+&lt;li&gt;bbb&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Orange&lt;&#x2F;li&gt;
+&lt;li&gt;Banana
+&lt;ul&gt;
+&lt;li&gt;bbb&lt;&#x2F;li&gt;
+&lt;li&gt;nana&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;biao-ge&quot;&gt;表格&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;name&lt;&#x2F;th&gt;&lt;th&gt;age&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Bob&lt;&#x2F;td&gt;&lt;td&gt;27&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Alice&lt;&#x2F;td&gt;&lt;td&gt;23&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;dai-ma&quot;&gt;代码&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hello&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;gong-shi&quot;&gt;公式&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+E = m c^2
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mermaid&quot;&gt;mermaid&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;mermaid&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-mermaid &quot;&gt;&lt;code class=&quot;language-mermaid&quot; data-lang=&quot;mermaid&quot;&gt;&lt;span&gt;graph TD;
+&lt;&#x2F;span&gt;&lt;span&gt;A--&amp;gt;B;
+&lt;&#x2F;span&gt;&lt;span&gt;A--&amp;gt;C;
+&lt;&#x2F;span&gt;&lt;span&gt;B--&amp;gt;D;
+&lt;&#x2F;span&gt;&lt;span&gt;C--&amp;gt;D;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;这是脚注内容&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh">
+        <title>zola 基础</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kinthero.github.io/blog/zola/"/>
+        <id>https://kinthero.github.io/blog/zola/</id>
+        
+        <content type="html" xml:base="https://kinthero.github.io/blog/zola/">&lt;p&gt;改用zola来做博客了，因为感觉自定义的程度比较高，刚好可以练习前端方面的技能。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
