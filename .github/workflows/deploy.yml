@@ -15,7 +15,7 @@ jobs:
           submodules: true
 
       - name: Setup Zola
-        uses: getzola/setup-zola@main
+        uses: getzola/setup-zola@master
 
       - name: Build
         run: zola build
