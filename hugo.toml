@@ -3,3 +3,7 @@ locale = 'zh-cn'
 title = "Kinther's Blog"
 
 theme = ["github.com/adityatelange/hugo-PaperMod"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
