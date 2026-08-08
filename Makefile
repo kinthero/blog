@@ -4,7 +4,7 @@
 # Project
 # =========================
 
-# 默认执行构建
+# 默认：本地预览
 all: serve
 
 # 本地预览
@@ -78,6 +78,13 @@ continue:
 	fi
 	@echo "==> Continuing rebase..."
 	git rebase --continue
+	@if [ -d "$$(git rev-parse --git-path rebase-merge)" ] || \
+	   [ -d "$$(git rev-parse --git-path rebase-apply)" ]; then \
+		echo ""; \
+		echo "Rebase is still in progress."; \
+		echo "Resolve the remaining conflicts, then run 'make continue' again."; \
+		exit 1; \
+	fi
 	@echo "==> Publishing..."
 	git switch main
 	git merge --ff-only dev
